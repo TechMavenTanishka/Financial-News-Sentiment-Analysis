@@ -1,73 +1,94 @@
+# Financial News Sentiment Analysis
+
+AI-powered Financial Sentiment Analysis system using Deep Learning and Transformer-based NLP models.
+
+---
+
 ## Project Overview
 
-This project performs financial sentiment analysis on finance-related
-news headlines, tweets, and articles using Deep Learning and Transformer models.
+This project analyzes finance-related news headlines, tweets, and articles to classify sentiment into:
 
-The system classifies text into:
-- Bearish
-- Neutral
-- Bullish
+- 🐻 Bearish
+- 😐 Neutral
+- 🐂 Bullish
 
-Models Implemented:
-- RNN
-- LSTM
-- GRU
-- BERT
-- FinBERT
+The project compares traditional Deep Learning architectures with Transformer-based models for financial sentiment classification.
 
 Final deployment is built using Streamlit.
 
-# Financial News Sentiment Analysis
+---
 
-AI-powered financial sentiment analysis system using Deep Learning and FinBERT.
+## Models Implemented
+
+### Deep Learning Models
+- RNN
+- LSTM
+- GRU
+
+### Transformer Models
+- BERT
+- FinBERT
+
+---
 
 ## Features
 
 - Financial sentiment classification
-- Bearish / Neutral / Bullish prediction
-- Deep Learning Models:
-  - RNN
-  - LSTM
-  - GRU
-  - BERT
-  - FinBERT
-- Interactive Streamlit Dashboard
-- Real-time prediction
-- Confidence visualization
+- Real-time prediction system
+- Bearish / Neutral / Bullish detection
+- Interactive Streamlit dashboard
+- Confidence score visualization
+- Transformer-based NLP pipeline
+- Financial-domain sentiment analysis
+
+---
 
 ## Tech Stack
 
 - Python
 - PyTorch
-- Transformers
+- HuggingFace Transformers
 - Streamlit
 - Pandas
 - Scikit-learn
 - Matplotlib
 - Plotly
+- NLTK
+
+---
 
 ## Dataset
 
-Finance-related tweets/news headlines labeled as:
+Finance-related tweets and news headlines labeled into:
+
 - Bearish
 - Neutral
 - Bullish
 
+---
+
 ## Final Selected Model
 
-FinBERT achieved the best performance among all models.
-
-## Run Locally
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+FinBERT achieved the best overall performance because it is specifically trained on financial-domain text and understands financial vocabulary more effectively than generic NLP models.
 
 ---
 
-# STEP 5 — CHECK REQUIREMENTS FILE
+## Project Workflow
 
-Run:
-
-```bash id="5x9x0g"
-pip freeze > requirements.txt
+```text
+Raw Dataset
+    ↓
+Text Preprocessing
+    ↓
+Tokenization
+    ↓
+Model Training
+(RNN / LSTM / GRU / BERT / FinBERT)
+    ↓
+Model Evaluation
+    ↓
+Model Comparison
+    ↓
+Prediction Pipeline
+    ↓
+Streamlit Deployment
