@@ -1,3 +1,22 @@
+## Project Overview
+
+This project performs financial sentiment analysis on finance-related
+news headlines, tweets, and articles using Deep Learning and Transformer models.
+
+The system classifies text into:
+- Bearish
+- Neutral
+- Bullish
+
+Models Implemented:
+- RNN
+- LSTM
+- GRU
+- BERT
+- FinBERT
+
+Final deployment is built using Streamlit.
+
 # Financial News Sentiment Analysis
 
 AI-powered financial sentiment analysis system using Deep Learning and FinBERT.
