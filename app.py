@@ -355,7 +355,7 @@ with right:
 
         st.write(f"### Confidence: {confidence}%")
 
-        st.markdown("### FinBERT Summary")
+        st.markdown("### Input Financial Text")
 
         st.markdown(f"""
         <div style="
@@ -433,6 +433,13 @@ with right:
         st.info("Awaiting financial article input...")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
+st.sidebar.title("About")
+
+st.sidebar.info("""
+Financial Sentiment Analysis Dashboard
+using FinBERT transformers.
+""")    
 
 # ---------------------------------------------------
 # FOOTER
