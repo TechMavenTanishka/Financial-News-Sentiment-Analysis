@@ -204,8 +204,8 @@ tokenizer, model = load_model()
 
 label_map = {
     0: "Bearish",
-    1: "Neutral",
-    2: "Bullish"
+    1: "Bullish",
+    2: "Neutral"
 }
 
 # ---------------------------------------------------
@@ -375,8 +375,8 @@ with right:
         chart_df = pd.DataFrame({
             "Sentiment": [
                 "Bearish",
-                "Neutral",
-                "Bullish"
+                "Bullish",
+                "Neutral"
             ],
             "Probability": probs
         })
